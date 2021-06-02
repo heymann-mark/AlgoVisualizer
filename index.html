@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css" type="text/css"></link>
+    <link rel="stylesheet" href="css/path2style.css" type="text/css"></link>
+      <link rel="stylesheet" href="css/pathstyle.css" type="text/css"></link>
+  </link>
+  <title>Visualizer</title>
+</head>
+<body>
+  <div class="topnav">
+  <div id=sliders>
+    <div class="slidercontainer">
+      <div class="textcontainer">
+      delay:
+      </div>
+      <input type="range" min="10" max="1000" value="1000" class="slider" id=delayRange step="1" oninput="delaySliderChange(this.value)">
+    </div>
+    <div class="slidercontainer">
+      <div class="textcontainer">
+         quantity:
+      </div>
+      <input type="range" min="1" max="1000" value="50" class="slider" id=quantityRange step="1" oninput="quantitySliderChange(this.value)">
+    </div>
+  </div>
+   <button class="randomize" onclick="randomize()">Randomize</button>
+   <button class="customize" onclick="customize()">Customize</button>
+  <div id=mininav>
+    <ul>
+      <li><button onclick="reset()">Reset</button></li>
+      <li><button onclick="start()">Start</button></li>
+      <li class="dropdown">
+         <button class="dropbtn">Sort</button>
+        <div class="dropdown-content">
+          <button onclick="chooseMethod(0)">Bubble</button>
+          <button onclick="chooseMethod(1)">Quick</button>
+          <button onclick="chooseMethod(2)">Merge</button>
+        </div>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn">Search</button>
+        <div class="dropdown-content">
+          <button onclick="chooseMethod(3)">djiksrav1</button>
+          <button onclick="chooseMethod(4)">A*</button>
+          <button onclick="chooseMethod(5)">djiksrav2</button>
+          <button onclick="resetToSearch(5)">splitA*/d</button>
+          <button onclick="resetToSearch(5)">bfs</button>
+          <button onclick="resetToSearch(5)">dfs</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id = display>
+</div>
+  <div id=container></div>
+  <script src="js/merge.js" charset="utf-8"></script>
+  <script src="js/quick.js" charset="utf-8"></script>
+  <script src="js/priorityQueue.js" charset="utf-8"></script>
+  <script src="js/dijkstra.js" charset="utf-8"></script>
+  <script src="js/weighteddijkstra.js" charset="utf-8"></script>
+  <script src="js/astar.js" charset="utf-8"></script>
+  <script src="js/pathfinder.js" charset="utf-8"></script>
+  <script src="js/bubble.js" charset="utf-8"></script>
+  <script src="js/header.js" charset="utf-8"></script>
+  <script src="js/sort.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>

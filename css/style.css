@@ -1,0 +1,271 @@
+html{
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    background-color: #333;
+    margin-top:0;
+
+}
+body{
+    height: 100%;
+    margin-top:0;
+
+}
+@supports (-moz-appearance:none) {body{margin-top:-2%;}}
+h1 {
+    color: #fff;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    font-family: helvetica;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding:0;
+}
+
+
+
+.topnav{
+    height:5%;
+    width:100%;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:0;
+}
+@supports (-moz-appearance:none) {.topnav{margin-top:0;}}
+input[type=range]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+        margin-top:7.5px;
+        height:100%;
+}
+@supports (-moz-appearance:none) {.topnav{margin-top:2%;}}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 60%;
+    background: #ddd;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height:100%;
+    width:10%;
+    background: gray;
+    margin-top: 0px;
+    margin-bottom:10%;
+    background-color:darkgrey;
+}
+@supports (-moz-appearance:none) {
+    input[type=range]::-webkit-slider-thumb{
+      margin-top: 20%;
+      margin-bottom:0%;
+    }
+}
+input[type=range]:focus {}
+input[type=range]:focus::-webkit-slider-runnable-track {width:100%;}
+/*
+100 line elements, for 50 numbers to be sorted
+each one takes up one percent of the container it is in, grid
+*/
+.bline {height: 100%;}
+.line {height: 100%;}
+li {
+  display: flex;
+  flex-wrap: wrap;
+}
+li button{
+    -moz-appearance: none;
+    font-family: helvetica;
+    font-size: 15px;
+    font-style: italic;
+    color:#41FF00;
+    letter-spacing: 2px;
+    background-color: #333;
+    padding:0px;
+    border:none;
+    height:100%;
+    //width:100%;
+}
+@supports (-moz-appearance:none) {
+    li button{
+      font-size: 100%;
+      letter-spacing: 10%;
+    }
+}
+li,  .dropdown-content button{
+    -moz-appearance: none;
+    font-family: helvetica;
+    font-size: 15px;
+    font-style: italic;
+    color:black;
+    letter-spacing: 2px;
+    background-color: #333;
+    padding-right:1%;
+    padding-left:1%;
+}
+@supports (-moz-appearance:none) {
+    li, .dropdown-content button{
+      font-size: 100%;
+      letter-spacing: 10%;
+      margin-top:0%;
+    }
+}
+/*sort and search*/
+li a:hover, .dropdown:hover .dropbtn {
+   background-color:black;
+   height:100%;
+}
+li.dropdown {display: inline-block;}
+/*reset and Start*/
+li button:hover, .dropdown:hover .dropdown {
+   background-color:black;
+   height:100%;
+}
+
+.slider{
+   width:50%;
+   background-color: #333;
+   margin-right: 0;
+}
+@supports (-moz-appearance:none) {
+  .slider{
+      background-color: white;
+   }
+}
+#sliders{
+   width:40%;
+   display: flex;
+   flex-wrap: wrap;
+   height:100%;
+   margin-top:-.5%
+}
+@supports (-moz-appearance:none) {
+   #sliders{
+     height:0%;
+     margin-top:.1%
+   }
+}
+.textcontainer{
+    margin-top: 12px;
+    height:100%;
+    color: #fff;
+    margin-bottom: 0px;
+    font-family: helvetica;
+    font-size:20px;
+    font-style: italic;
+    color:red;
+    padding:0;
+}
+
+
+@supports (-moz-appearance:none) {
+   .textcontainer{
+       margin-top:0%;
+       height:0%;
+       font-size:100%;
+    }
+}
+
+.slidercontainer{
+  width:50%;
+  display: flex;
+  flex-wrap: wrap;
+  height:100%;
+}
+@supports (-moz-appearance:none) {
+  .slidercontainer{
+     margin-top:1%;
+     height:0%;
+  }
+}
+ul {
+   width:100%;
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   height:100%;
+}
+@supports (-moz-appearance:none) {
+   ul{
+     background-color:#333;
+  }
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   width:60%;
+   z-index: 1;
+}
+#mininav{
+   margin-top:0px;
+   height:100%;
+   width:30%;
+}
+@supports (-moz-appearance:none) {
+   #mininav{
+     width:60%;
+   }
+}
+.dropdown-content button{
+    display: block;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+    background-color: white;
+}
+@supports (-moz-appearance:none) {
+  .dropdown-content button{height:0%;}
+}
+.dropdown  button{
+    width:100%;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content button:hover {background-color: #d3d3d3;}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width:5%;
+}
+#display {
+    height:5%;
+    width:100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    font-style: italic;
+    letter-spacing: 1px;
+
+}
+@supports (-moz-appearance:none) {#display{height:5%;font-size: 100%;}}
+output{
+
+}
+@supports (-moz-appearance:none) {
+   output{
+
+   }
+}
+
+
+
+
+#container {
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 95%;
+    width: 100%;
+    justify-items: center;
+}
+.topnav >.randomize,.customize{
+    width:10%;
+    height:100%;
+    font-style: italic;
+    letter-spacing: 1px;
+    color:red;
+    border-style: double;
+}

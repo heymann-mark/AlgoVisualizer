@@ -1,0 +1,38 @@
+.grid {
+  background-color: black;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left:  1px;
+  padding-right: 0px;
+  margin-top:  0px;
+  margin-bottom:  500px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.square{
+  background-color: black;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:  0px;
+  margin-top:  0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.box{
+  background-color:white;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom:  0px;
+  margin-top:  0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size:4px;
+}
